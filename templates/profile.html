@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-<div class="container-fluid">
-    <h1 class="headline">Your Profile :</h1>
-        <div class="row mt-4 mb-4">
-            <div class="col-lg-5 card card-body">
+
+<div class="container-fluid" >
+    <h1 class="headline" >Your Profile :</h1>
+        <div class="row mt-4 mb-4" >
+            <div class="col-lg-5 card card-body" style="background: #2C3335;">
             <div class="app-title">
                 
-                <h1 class="text-center profile-text mt-2">Name: {{ request.user }} </h1>
+                <h1 class="text-center profile-text mt-2"> <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black; background-color: #fff;padding: 10px 30px;"> Name: {{ request.user }}</span> </h1>
 
             </div>
 
@@ -17,7 +18,7 @@
                 <h1>Calorie Goal For Today</h1>
                 {{ field }}
                 {% endfor %}
-                <input class="btn login_btn profile-submit ml-3" type="submit" value="select">
+                <input class="btn login_btn profile-submit ml-3" type="submit" value="Select" style="background: #F4C724;">
 
             </form>
         </div>
@@ -27,9 +28,9 @@
         <table class="table text-center">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">Calorie Consumed</th>
-                    <th scope="col">Calorie Goal</th>
+                    <th scope="col" style="background:#2C3335;">Date</th>
+                    <th scope="col" style="background:#AE1438">Calorie Consumed</th>
+                    <th scope="col"style="background:#2C3335;">Calorie Goal</th>
                 </tr>
             </thead>
             <tbody>
@@ -54,11 +55,11 @@
       <table class="table text-center">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">Food Name</th>
+                    <th scope="col" style="background: #EA7773;">Food Name</th>
                     <th scope="col">Calories</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Update</th>
-                    <th scope="col">Delete</th>
+                    <th scope="col"style="background: #EA7773;">Quantity</th>
+                    <th scope="col" style="background: #EA7773;border-left: 1px solid black;">Update</th>
+                    <th scope="col" style="background: #EA7773;border-left: 1px solid black;">Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -67,8 +68,8 @@
                     <td>{{ food.name }}</td>
                     <td>{{ food.calorie }}</td>
                     <td>{{ food.quantity }}</td>
-                    <td><a class="btn btn-sm btn-info" href="{% url 'update_food' food.id %}">Update</a></td>
-                    <td><a class="btn btn-sm " href="{% url 'delete_food' food.id %}">Delete</a></td>
+                    <td><a class="btn btn-sm btn-info" href="{% url 'update_food' food.id %}" style="background: #EC4849;">Update</a></td>
+                    <td><a class="btn btn-sm " href="{% url 'delete_food' food.id %}" >Delete</a></td>
 
                     
                 </tr>

@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 a {
   text-decoration:none !important;
 }
@@ -22,9 +23,9 @@ a {
 #navbar-primary.navbar-default .navbar-nav {
   width: 100%;
   text-align: center;
-background: #2193b0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #ffcd3c;  /* fallback for old browsers */
+background: #ffcd3c;  /* Chrome 10-25, Safari 5.1-6 */
+background: #ffcd3c; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   border-radius: 100px ;
 }
@@ -40,7 +41,7 @@ background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, F
 #navbar-primary.navbar-default .navbar-nav > li > a {
   padding-left: 30px;
   padding-right: 30px;
-  color:#000080;
+  color:#373a40;
   font-size: 18px;
   text-decoration:none;
 }
